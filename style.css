@@ -1,0 +1,225 @@
+/* Reset di margini e padding */
+/* Questo resetta i margini e i padding di tutti gli elementi per uniformare il layout su tutti i browser */
+* {
+    margin: 0;                /* Imposta il margine a 0 */
+    padding: 0;               /* Imposta il padding a 0 */
+    box-sizing: border-box;   /* Cambia il box-sizing in border-box, per includere padding e border nelle dimensioni degli elementi */
+}
+
+/* Stile di base per il body */
+body {
+    font-family: 'Arial', sans-serif; /* Imposta il font di base */
+    background-color: #ffffff;       /* Colore di sfondo bianco */
+    color: #333;                     /* Colore del testo grigio scuro */
+    line-height: 1.6;                /* Aumenta la spaziatura tra le righe di testo */
+}
+
+/* Container centrale */
+.container {
+    width: 90%;             /* Imposta la larghezza al 90% della larghezza del viewport */
+    margin: 0 auto;         /* Allinea il contenuto al centro */
+    max-width: 1200px;      /* Imposta una larghezza massima di 1200px */
+}
+
+.container h1 {
+    font-family: 'Lucida Handwriting', cursive; /* Cambia il font per i titoli */
+}
+
+/* Stile per l'header */
+header {
+    background-color: #2868FD;  /* Colore di sfondo blu */
+    color: white;               /* Colore del testo bianco */
+    padding: 40px 0;            /* Distanza superiore e inferiore di 40px */
+    text-align: center;         /* Centra il testo orizzontalmente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra sotto l'header */
+}
+
+header h1 {
+    font-size: 3rem;        /* Imposta la dimensione del font a 3rem */
+    margin-bottom: 15px;    /* Distanza inferiore di 15px */
+    font-weight: bold;      /* Imposta il testo in grassetto */
+}
+
+header p {
+    font-size: 1.2rem;      /* Imposta la dimensione del font a 1.2rem */
+    margin-bottom: 0;       /* Rimuove la distanza inferiore */
+}
+
+#companyInfo p {
+    text-align: justify;   /* Giustifica il testo all'interno di #companyInfo */
+}
+
+/* Stile di base per le sezioni */
+section {
+    padding: 50px 0;        /* Aggiunge padding di 50px sopra e sotto */
+}
+
+h2 {
+    font-size: 2.5rem;          /* Imposta la dimensione del font a 2.5rem */
+    color: #000000;             /* Imposta il colore del testo a nero */
+    margin-bottom: 20px;        /* Distanza inferiore di 20px */
+    text-align: center;         /* Centra il testo orizzontalmente */
+    font-weight: 600;           /* Imposta il font in semigrassetto */
+    font-family: 'Lucida Handwriting', cursive; /* Imposta il font specificato */
+}
+
+/* Paragrafi nelle sezioni */
+.about-company p,
+.environment-impact p {
+    font-size: 1.1rem;      /* Imposta la dimensione del font a 1.1rem */
+    text-align: center;     /* Centra il testo orizzontalmente */
+    margin-top: 20px;       /* Aggiunge una distanza superiore di 20px */
+}
+
+/* Sezione Impatto Ambientale */
+.environment-impact {
+    padding: 40px 0;        /* Aggiunge padding di 40px sopra e sotto */
+    background-color: #ffffff; /* Colore di sfondo bianco */
+}
+
+/* Statistiche */
+.stats {
+    display: flex;              /* Imposta un layout flessibile per disporre gli elementi in una riga */
+    justify-content: space-between; /* Distribuisce lo spazio tra gli elementi in modo uniforme */
+    gap: 20px;                  /* Distanza di 20px tra gli elementi */
+    flex-wrap: wrap;            /* Consente agli elementi di andare a capo su schermi piccoli */
+    margin-top: 30px;           /* Aggiunge una distanza superiore di 30px */
+}
+
+/* Stile per ogni stat */
+.stat {
+    background-color: #2868FD;  /* Colore di sfondo blu */
+    color: #ffffff;             /* Colore del testo bianco */
+    border: 1px solid #ddd;     /* Bordo sottile grigio chiaro */
+    padding: 20px;              /* Padding di 20px */
+    text-align: center;         /* Centra il testo orizzontalmente */
+    border-radius: 10px;        /* Angoli arrotondati con raggio di 10px */
+    width: 30%;                 /* Imposta la larghezza al 30% */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aggiunge transizioni per effetti al passaggio del mouse */
+}
+
+.stat h3 {
+    font-size: 32px;                  /* Imposta la dimensione del font a 32px */
+    color: #ffffff;                   /* Colore del testo bianco */
+    font-family: 'Lucida Handwriting', cursive; /* Imposta il font specificato */
+}
+
+/* Effetto ingrandimento al passaggio del mouse */
+.stat:hover {
+    transform: scale(1.1);       /* Aumenta la dimensione dell'elemento del 10% */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aggiunge una ombra più pronunciata */
+}
+
+/* Sponsor Logos */
+.sponsors .sponsor-logos {
+    display: flex;                /* Dispone le immagini dei loghi in riga */
+    justify-content: space-around; /* Distribuisce gli elementi in modo uniforme */
+    margin-top: 20px;             /* Aggiunge una distanza superiore di 20px */
+}
+
+.sponsor-logos img {
+    max-width: 150px;  /* Imposta la larghezza massima dell'immagine a 150px */
+    margin: 0 10px;    /* Aggiunge margine laterale di 10px */
+    border-radius: 10px; /* Angoli arrotondati delle immagini */
+}
+
+/* Bottoni CTA */
+.cta-buttons {
+    flex: 1 1 48%;          /* Consente ai bottoni di occupare il 48% della larghezza */
+    display: flex;           /* Imposta un layout flessibile */
+    flex-direction: column;  /* Dispone i bottoni uno sopra l'altro */
+    align-items: center;     /* Centra i bottoni orizzontalmente */
+}
+
+.button {
+    background-color: #2868FD;  /* Colore di sfondo blu */
+    color: white;               /* Colore del testo bianco */
+    padding: 18px 35px;         /* Padding attorno al testo */
+    text-decoration: none;      /* Rimuove la sottolineatura del link */
+    border-radius: 25px;        /* Angoli arrotondati con raggio di 25px */
+    font-size: 1.2rem;          /* Imposta la dimensione del font a 1.2rem */
+    margin: 10px;               /* Aggiunge margine di 10px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transizioni per cambiamenti visivi */
+}
+
+.button:hover {
+    background-color: #4C8BFF;  /* Cambia il colore di sfondo a blu più chiaro quando si passa sopra */
+    transform: translateY(-3px); /* Solleva il bottone di 3px al passaggio del mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #333333;  /* Colore di sfondo grigio scuro */
+    color: white;               /* Colore del testo bianco */
+    text-align: center;         /* Centra il testo orizzontalmente */
+    padding: 20px 0;            /* Aggiunge padding di 20px sopra e sotto */
+    margin-top: 50px;           /* Distanza superiore di 50px */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra sotto il footer */
+}
+
+/* Carousel */
+/* Personalizzazione del testo e dello sfondo del carousel */
+.carousel-caption {
+    background-color: #ffffff;  /* Colore di sfondo bianco */
+    padding: 15px;              /* Padding di 15px attorno al testo */
+    border-radius: 10px;        /* Angoli arrotondati con raggio di 10px */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Aggiunge un'ombra */
+    color: #000000;             /* Colore del testo nero */
+}
+
+.carousel-caption h5 {
+    color: #333333;             /* Colore del testo grigio scuro per il sottotitolo */
+    font-size: 1.2rem;          /* Imposta la dimensione del font a 1.2rem */
+}
+
+/* Stile per il titolo del carousel */						  
+.carousel-caption h2 {
+    color: #000000;             /* Colore del testo nero per il titolo */
+    font-size: 1.5rem;          /* Imposta la dimensione del font a 1.5rem */
+    font-weight: bold;          /* Imposta il font in grassetto */
+	font-family: 'Lucida Handwriting', cursive; /* Imposta il font come 'Lucida Handwriting' e corsivo */
+}
+
+/* Stile per il paragrafo all'interno del carousel */
+.carousel-caption p {
+    text-align: justify;        /* Giustifica il testo */
+}
+
+/* Indicatori del carousel */
+/* Impostazione del colore di sfondo degli indicatori */
+.carousel-indicators li {
+    background-color: #D3D3D3;  /* Colore di sfondo grigio chiaro per gli indicatori */
+}
+
+/* Impostazione del colore di sfondo per l'indicatore attivo */
+.carousel-indicators .active {
+    background-color: #2868FD;  /* Colore di sfondo blu per l'indicatore attivo */
+}
+
+/* Stile per le immagini all'interno del carousel */
+.carousel-item img {
+    width: 80%;                 /* Imposta la larghezza dell'immagine all'80% */
+    height: auto;               /* Mantiene l'altezza automatica per preservare le proporzioni */
+    border-radius: 15px;        /* Applica angoli arrotondati di 15px all'immagine */
+    margin-bottom: 25%;         /* Aggiunge una distanza inferiore del 25% */
+}
+
+/* Stile per il contenitore del carousel */
+.carousel-container {
+    justify-content: space-between; /* Distribuisce gli elementi con spazio tra di essi */
+    flex-wrap: wrap;                /* Permette di andare a capo per la responsività */
+    width: 70%;                     /* Imposta la larghezza del contenitore al 70% */
+}
+
+/* Stile per i controlli del carousel (precedente e successivo) */
+.carousel-control-prev, .carousel-control-next {
+    padding-bottom: 25%;           /* Aggiunge un padding inferiore del 25% per i controlli */
+}
+
+/* Stile per un contenitore flex generico */
+.flex {
+    display: flex;                 /* Imposta un layout flessibile */
+}
+
